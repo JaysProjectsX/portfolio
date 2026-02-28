@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • OlympusDesigns</title>
+  <meta name="description" content="Contact OlympusDesigns." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="glow-blob blob-a"></div>
+  <div class="glow-blob blob-b"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-blur fixed-top">
+    <div class="container">
+      <a class="navbar-brand brand-badge" href="index.html"><span class="brand-dot"></span><span>OlympusDesigns</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container container-hero">
+    <div class="row g-4">
+      <div class="col-lg-6 reveal">
+        <div class="pill mb-3"><i class="bi bi-send"></i><span>Let’s connect</span></div>
+        <h1 class="section-title">Contact</h1>
+        <p class="section-sub">
+          Easiest way to reach me is email. You can also find me on GitHub and LinkedIn.
+        </p>
+
+        <div class="card-glass p-4 mt-3">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="icon" style="width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid var(--stroke);">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <div>
+              <div class="fw-bold">Email</div>
+              <div style="color:var(--muted)">youremail@example.com</div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-accent" href="mailto:youremail@example.com"><i class="bi bi-envelope-fill me-2"></i>Email me</a>
+            <a class="btn btn-ghost" href="#"><i class="bi bi-github me-2"></i>GitHub</a>
+            <a class="btn btn-ghost" href="#"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 reveal">
+        <div class="card-glass p-4">
+          <h4 class="fw-bold mb-3">Quick message</h4>
+          <p class="section-sub">This form uses a simple mailto action for now (you can upgrade to Netlify Forms later).</p>
+
+          <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+              <label class="form-label">Your name</label>
+              <input class="form-control bg-transparent text-light border-secondary" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Your email</label>
+              <input type="email" class="form-control bg-transparent text-light border-secondary" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control bg-transparent text-light border-secondary" rows="5" name="message" required></textarea>
+            </div>
+            <button class="btn btn-accent" type="submit"><i class="bi bi-send-fill me-2"></i>Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container d-flex justify-content-between flex-wrap gap-3">
+      <div>© <span id="year"></span> OlympusDesigns</div>
+      <div class="d-flex gap-3">
+        <a class="text-decoration-none" href="index.html">Home</a>
+        <a class="text-decoration-none" href="projects.html">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
