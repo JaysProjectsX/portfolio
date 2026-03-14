@@ -21,6 +21,12 @@ body{
   overflow-x: hidden;
 }
 
+.bkgd{
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(91,124,255,.18), transparent 60%),
+              radial-gradient(900px 520px at 80% 20%, rgba(76,214,184,.14), transparent 65%),
+              linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 100%);
+}
+
 a { color: inherit; }
 a:hover { color: var(--accent); }
 
@@ -54,7 +60,6 @@ a:hover { color: var(--accent); }
   gap:.5rem;
   padding:.45rem .85rem;
   border-radius: 999px;
-  border: 1px solid var(--stroke);
   background: rgba(255,255,255,.04);
   color: var(--muted);
   font-size: .92rem;
@@ -86,7 +91,6 @@ a:hover { color: var(--accent); }
 
 .btn-ghost{
   background: rgba(255,255,255,.06);
-  border: 1px solid var(--stroke);
   color: var(--text);
   border-radius: 999px;
   padding: .8rem 1.15rem;
@@ -98,7 +102,6 @@ a:hover { color: var(--accent); }
 
 .card-glass{
   background: var(--card);
-  border: 1px solid var(--stroke);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -138,7 +141,6 @@ a:hover { color: var(--accent); }
 .feature-grid .feature{
   padding: 1.15rem 1.15rem;
   border-radius: 18px;
-  border: 1px solid var(--stroke);
   background: rgba(255,255,255,.04);
   height: 100%;
 }
@@ -154,8 +156,6 @@ a:hover { color: var(--accent); }
 
 .stat-strip{
   background: rgba(255,255,255,.04);
-  border-top: 1px solid rgba(255,255,255,.08);
-  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .stat{
   padding: 1.35rem 1rem;
@@ -166,7 +166,6 @@ a:hover { color: var(--accent); }
 
 .project-card img{
   border-radius: 18px;
-  border: 1px solid rgba(255,255,255,.10);
   width: 100%;
   height: auto;
   display:block;
@@ -181,7 +180,6 @@ a:hover { color: var(--accent); }
   align-items:center;
   padding:.35rem .65rem;
   border-radius:999px;
-  border:1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.04);
   color: var(--muted);
   font-size:.85rem;
